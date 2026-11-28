@@ -8,12 +8,13 @@ public class OrderManagement {
 
         Scanner sc = new Scanner(System.in);
 
-        try {
+        String url = "jdbc:mysql://localhost:3306/library_db";
+        String username = "root";
+        String password = "Admin@123";
 
+        try {
             Connection con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/shopping_db",
-                "root",
-                "password"
+                url, username, password
             );
 
             System.out.println("Database Connected Successfully!");
